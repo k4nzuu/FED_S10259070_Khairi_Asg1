@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <style>
+        body{
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        .nav ul {
+            list-style-type: none;
+        }
+        @media screen and (max-width: 768px) {
+            .garage-heading h1 {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+            .garage-heading span {
+                font-size: 1rem;
+                text-align: center;
+                display: block;
+                margin-top: 10px;
+            }
+            .garage-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding: 10px;
+            }
+            .garage-container .box {
+                width: 100%;
+                text-align: center;
+            }
+            .garage-container .box img {
+                width: 90%; 
+                height: auto;
+            }
+            .garage-container .box h2 {
+                font-size: 1.2rem;
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <div class="header">
+        <div class="nav">
+            <img src="/images/knight-png.webp" alt="logo">
+            <ul>
+            <li><a href="/home.html">HOME</a></li>
+            <li><a href="/aboutus.html">ABOUT US</a></li>
+            <li><a href="/featured.html">FEATURED</a></li>
+            <li><a href="/garage.html">GARAGE</a></li>
+            </ul>
+            <i class='bx bxs-user' onclick="toggleMenu()"></i>
+        </div>
+        <div class="menu-wrap" id="subMenu">
+            <div class="menu">
+                <div class="info">
+                    <i class='bx bxs-user'></i>
+                    <h3>username</h3>
+                </div>
+                <hr>
+                <a href="#" class="menu-link">
+                    <i class='bx bx-cog'></i>
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="menu-link">
+                    <i class='bx bxs-help-circle'></i>
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="/index.html" class="menu-link" onclick="notifyLogin()">
+                    <i class='bx bx-log-in'></i>
+                    <p>Login</p>
+                    <span>></span>
+                <a href="/index.html" class="menu-link" onclick="notifyLogout()">
+                    <i class='bx bx-log-out'></i>
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="garage">
+        <div class="garage-heading">
+            <h1>Garage</h1>
+            <span>Something for everyone.</span>
+        </div>
+
+        <div class="garage-container">
+            
+            <div class="box">
+                <img src="/images/porsche-g1.jpg" alt="">
+                <h2>PORSCHE CAYENNE</h2>
+            </div>
+
+            <div class="box">
+                <img src="/images/bmw-m4.jpg" alt="">
+                <h2>BMW M4</h2>
+            </div>
+
+            <div class="box">
+                <img src="/images/bentley.jpg" alt="">
+                <h2>BENTLEY</h2>
+            </div>
+
+
+            <div class="box">
+                <img src="/images/aston-martin.jpg" alt="">
+                <h2>ASTON MARTIN</h2>
+            </div>
+
+            <div class="box">
+                <img src="/images/rr-ghost.jpg" alt="">
+                <h2>ROLLS ROYCE</h2>
+            </div>
+
+            <div class="box">
+                <img src="/images/mercedes.jpg" alt="">
+                <h2>MERCEDES BENZ</h2>
+            </div>
+
+            <div class="box">
+                <img src="/images/tesla-3.jpg" alt="">
+                <h2>TESLA</h2>
+            </div>
+
+            <div class="box">
+                <img src="/images/nissan-gtr.jpg" alt="">
+                <h2>NISSAN GTR</h2>
+            </div>
+
+            <div class="box">
+                <img src="/images/bugatti-veyron.jpg" alt="">
+                <h2>BUGATTI</h2>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/home.html">HOME</a></li>
+                        <li><a href="/aboutus.html">ABOUT US</a></li>
+                        <li><a href="/featured.html">FEATURED</a></li>
+                        <li><a href="/garage.html">GARAGE</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">EMAIL</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <div class="social">
+                        <h4>Socials</h4>
+                        <ul>
+                            <i class='bx bxl-instagram-alt' ></i>
+                            <i class='bx bxl-twitter' ></i>
+                            <i class='bx bxl-facebook' ></i>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+</body>
+</html>

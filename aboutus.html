@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        @media screen and (max-width: 768px) {
+            .main-heading h1 {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+            .main-content .info span {
+                display: block;
+                font-size: 1.2rem;
+                text-align: center;
+                margin: 10px 0;
+            }
+            .main-content .info p {
+                font-size: 0.9rem;
+                text-align: justify;
+                padding: 10px;
+            }
+            .box img {
+                width: 100%;
+                height: auto;
+                margin: 20px 0;
+            }
+            .testimonials {
+                padding: 10px;
+            }
+            .testimonial-heading span {
+                display: block;
+                font-size: 1rem;
+                text-align: center;
+            }
+            .testimonial-heading h1 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .testimonial-box-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            .testimonial-box {
+                width: 100%;
+                padding: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+            }
+            .testimonial-box .box-top {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .testimonial-box .profile-img img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            .testimonial-box .client-comments p {
+                font-size: 0.9rem;
+                text-align: justify;
+            }
+        }
+    </style>
+    <div class="header">
+        <div class="nav">
+            <img src="/images/knight-png.webp" alt="logo">
+            <ul>
+            <li><a href="/home.html">HOME</a></li>
+            <li><a href="/aboutus.html">ABOUT US</a></li>
+            <li><a href="/featured.html">FEATURED</a></li>
+            <li><a href="/garage.html">GARAGE</a></li>
+            </ul>
+            <i class='bx bxs-user' onclick="toggleMenu()"></i>
+        </div>
+        <div class="menu-wrap" id="subMenu">
+            <div class="menu">
+                <div class="info">
+                    <i class='bx bxs-user'></i>
+                    <h3>username</h3>
+                </div>
+                <hr>
+                <a href="#" class="menu-link">
+                    <i class='bx bx-cog'></i>
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="menu-link">
+                    <i class='bx bxs-help-circle'></i>
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="/index.html" class="menu-link" onclick="notifyLogin()">
+                    <i class='bx bx-log-in'></i>
+                    <p>Login</p>
+                    <span>></span>
+                <a href="/index.html" class="menu-link" onclick="notifyLogout()">
+                    <i class='bx bx-log-out' ></i>
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-heading">
+            <h1>The story</h1>
+        </div>
+        <div class="main-content">
+            <div class="info">
+                <span>Welcome to Knight's: Where Excellence Drives Us</span>
+                <p>At Knights, we are not just a car dealership—we are curators of automotive perfection.
+                     Our collection is a showcase of the finest vehicles from the world's most prestigious manufacturers. 
+                     Each car we sell represents the pinnacle of engineering, craftsmanship, and luxury, designed for those who demand nothing but the best.
+                    </p>
+                <p>Our journey began with a vision: to redefine what it means to own a car by offering more than a vehicle—a masterpiece. Over the years, 
+                    we have worked tirelessly to build partnerships with leading brands, hand-selecting each model to ensure it meets our unwavering standards of quality and exclusivity.
+                </p>
+                <p>But we don't stop there. For us, aiming for the best means delivering an unparalleled customer experience. 
+                    From the moment you step into our showroom to the day you drive away in your dream car, you'll feel the difference in every detail.
+                </p>
+                <span>Our Mission</span>
+                <p>To connect extraordinary people with extraordinary vehicles, always raising the bar in luxury, performance, and personalized service.</p>
+                <p>Join us as we continue to write the story of excellence. Whether it’s a bespoke supercar or a timeless classic, we invite you to experience the best with us.</p>
+            </div>
+            <div class="box">
+                <img src="/images/2-knights.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="testimonials">
+        <div class="testimonial-heading">
+            <span>Reviews</span>
+            <h1>Client's Testimonials</h1>
+        </div>
+        <div class="testimonial-box-container">
+            <div class="testimonial-box">
+                <div class="box-top">
+
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="/images/avatar.jpg" alt="">
+                        </div>
+                        <div class="user-name">
+                            <strong>Annamalai</strong>
+                            <span>@machaspize</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+
+                </div>
+
+                <div class="client-comments">
+                    <p>The dealership offers an impressive variety of premium cars and provides outstanding customer service. 
+                        The staff is knowledgeable and attentive, making the buying process seamless.
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial-box">
+                <div class="box-top">
+
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="/images/avatar.jpg" alt="">
+                        </div>
+                        <div class="user-name">
+                            <strong>Aqeel</strong>
+                            <span>@lightning_mcqeel</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+
+                </div>
+
+                <div class="client-comments">
+                    <p>This dealership truly understands luxury. From the pristine showroom to the high-end vehicles, 
+                        every detail reflects class and excellence. Highly recommended for premium car enthusiasts.
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial-box">
+                <div class="box-top">
+
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="/images/avatar.jpg" alt="">
+                        </div>
+                        <div class="user-name">
+                            <strong>Egil</strong>
+                            <span>@egal_</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+
+                </div>
+
+                <div class="client-comments">
+                    <p>The team goes above and beyond to ensure customer satisfaction. 
+                        They made the whole process stress-free and tailored every detail to my preferences. A top-notch experience!
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial-box">
+                <div class="box-top">
+
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="/images/avatar.jpg" alt="">
+                        </div>
+                        <div class="user-name">
+                            <strong>Siran</strong>
+                            <span>@lilmouse_4457</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+
+                </div>
+
+                <div class="client-comments">
+                    <p>An amazing selection of top-tier vehicles, all in excellent condition. 
+                        The staff's expertise and genuine care for customers made this dealership stand out. Will return for future purchases!
+                    </p>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/home.html">HOME</a></li>
+                        <li><a href="/aboutus.html">ABOUT US</a></li>
+                        <li><a href="/featured.html">FEATURED</a></li>
+                        <li><a href="/garage.html">GARAGE</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">EMAIL</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <div class="social">
+                        <h4>Socials</h4>
+                        <ul>
+                            <i class='bx bxl-instagram-alt' ></i>
+                            <i class='bx bxl-twitter' ></i>
+                            <i class='bx bxl-facebook' ></i>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+</body>
+</html>

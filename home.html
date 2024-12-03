@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <style>
+        .content{
+            padding-left: 80px;
+            margin-top: 40vh;
+        }
+        .content h1{
+            font-weight: 500;
+            letter-spacing: 1.2px;
+            font-size: 2.5rem
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url('/images/horse-2.jpg');
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+        .content button {
+            height: 50px;
+            width: 220px;
+            font-weight: 600;
+            font-size: 19px;
+            background-color: #fff; 
+            color: black; 
+            letter-spacing: 1.2px;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 5px 0; 
+            cursor: pointer; 
+            transition: all 0.3s ease; 
+            margin-top: 15px;
+        }
+        .content button:hover {
+            background-color: black; 
+            color: white;
+            border: 2px solid #fff;
+            transform: scale(1.05); 
+        }
+        @media screen and (max-width: 768px) {
+            .content {
+                padding-left: 20px; 
+                margin-top: 20vh; 
+                text-align: center; 
+            }
+            .content h1 {
+                font-size: 1.8rem; 
+                letter-spacing: 1px; 
+            }
+            .content button {
+                width: 80%; 
+                font-size: 16px; 
+                padding: 10px 0; 
+            }
+            body {
+                background-size: contain; 
+            }
+        }
+
+
+    </style>
+    <div class="header">
+        <div class="nav">
+            <img src="/images/knight-png.webp" alt="logo">
+            <ul>
+            <li><a href="/home.html">HOME</a></li>
+            <li><a href="/aboutus.html">ABOUT US</a></li>
+            <li><a href="/featured.html">FEATURED</a></li>
+            <li><a href="/garage.html">GARAGE</a></li>
+            </ul>
+            <i class='bx bxs-user' onclick="toggleMenu()"></i>
+        </div>
+        <div class="menu-wrap" id="subMenu">
+            <div class="menu">
+                <div class="info">
+                    <i class='bx bxs-user'></i>
+                    <h3>username</h3>
+                </div>
+                <hr>
+                <a href="#" class="menu-link">
+                    <i class='bx bx-cog'></i>
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="menu-link">
+                    <i class='bx bxs-help-circle'></i>
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="/index.html" class="menu-link" onclick="notifyLogin()">
+                    <i class='bx bx-log-in'></i>
+                    <p>Login</p>
+                    <span>></span>
+                <a href="/index.html" class="menu-link" onclick="notifyLogout()">
+                    <i class='bx bx-log-out'></i>
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="content">
+            <h1>Dare to Dream</h1>
+            <button id="navigateButton">Elevate your Game</button>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+</body>
+</html>
